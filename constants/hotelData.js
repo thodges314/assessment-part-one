@@ -55,7 +55,8 @@ export const hotelInfo = {
 				'Running Track',
 				'Walking Track'
 			]
-		}
-
+		},
+		main_img: 'static/images/hotelexterior.jpg',
+		map_img: 'map.png'
 	}
 }
