@@ -4,10 +4,14 @@
   "description": "Part one of Hilton Assessment",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_PATH=. jest",
+    "test": "echo \"Error: as tests were requested only for part 2, they have been omitted from part 1\" && exit 1",
     "dev": "NODE_PATH=. next",
     "build": "NODE_PATH=. next build",
     "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thodges314/assessment-part-one.git"
   },
   "author": "Thomas Hodges",
   "license": "ISC",
@@ -19,9 +23,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@testing-library/jest-dom": "^4.1.0",
-    "@testing-library/react": "^9.1.4",
-    "jest": "^24.9.0"
+    "@babel/core": "^7.6.0"
   }
 }
