@@ -1,6 +1,8 @@
 import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
+import styled from 'styled-components'
+import {Header} from 'components'
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -14,18 +16,58 @@ class MyApp extends App {
   //
   //   return { ...appProps }
   // }
+  img = require('static/images/background.png')
 
   render() {
     const { Component, pageProps } = this.props
     return (
-      <div>
+      <StyledApp>
         <Head>
           <title>Hilton Assessment Part 1</title>
         </Head>
-        <Component {...pageProps} />
-      </div>
+        <style jsx global>{`
+          body { 
+            background-image: url('static/images/background.png');
+            background-size: cover;
+            background-repeat: repeat-y;
+          }
+        `}</style>
+        <div>
+          <div id='nav-bar'>
+            <Header />
+          </div>
+          <div id='main-content'>
+            <Component {...pageProps} />
+          </div>
+        </div>
+      </StyledApp>
     )
   }
 }
+
+const StyledApp = styled.div`
+height: 100%;
+  #wrapper-div {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: stretch;
+    min-height: 100%;
+    margin: 0;
+  }
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #main-content {
+    top: 30;
+    left: 0;
+    right: 0;
+    height: stretch;
+    width: 100%;
+  }
+`
 
 export default MyApp
