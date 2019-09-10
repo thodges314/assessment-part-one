@@ -1,5 +1,7 @@
+import {AddressBlock} from 'components'
+
 export default () => (
 	<div>
-		DETAILS
+		<AddressBlock />
 	</div>
 )

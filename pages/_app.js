@@ -16,7 +16,6 @@ class MyApp extends App {
   //
   //   return { ...appProps }
   // }
-  img = require('static/images/background.png')
 
   render() {
     const { Component, pageProps } = this.props
@@ -30,6 +29,8 @@ class MyApp extends App {
             background-image: url('static/images/background.png');
             background-size: cover;
             background-repeat: repeat-y;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
           }
         `}</style>
         <div>
@@ -62,10 +63,7 @@ height: 100%;
     width: 100%;
   }
   #main-content {
-    top: 30;
-    left: 0;
-    right: 0;
-    height: stretch;
+    margin-top: 50px;
     width: 100%;
   }
 `

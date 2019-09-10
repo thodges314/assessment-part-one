@@ -1,4 +1,4 @@
-export const hotelInfo = {
+export const hotelData = {
 	chicago: {
 		address: {
 			name: 'Hilton Chicago',

@@ -1,3 +1,7 @@
+import AddressBlock from './AddressBlock'
 import Header from './Header'
 
-export {Header}
+export {
+	AddressBlock,
+	Header
+}

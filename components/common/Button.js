@@ -13,9 +13,8 @@ const StyledButton = styled.div`
 	border-radius: 4px;
 	color: white;
 	display: inline-block;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 800;
 	padding: 6px;
+	user-select: none;
 	&:active {
 		filter: invert(10%);
 	}

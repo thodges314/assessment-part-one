@@ -46,9 +46,8 @@ const StyledHeader = styled.div`
 		margin: 6.5px;
 	}
 	#text {
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: 800;
 		color: white;
+		user-select: none;
 	}
 	#hilt-logo {
 		margin: 6.5px;
