@@ -16,7 +16,7 @@
   "author": "Thomas Hodges",
   "license": "ISC",
   "dependencies": {
-    "next": "^9.0.5",
+    "next": "^11.1.0",
     "next-routes": "^1.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
